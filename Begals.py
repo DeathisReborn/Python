@@ -63,13 +63,13 @@ while True:
         guess = ''
         while len(guess) != NUM_DIGITS or not isOnlyDigits(guess):
             print('Guess #%s: ' % guessesTaken)
-            guess = str(input())
+            guess = raw_input()
         print(getClues(guess, secretNum))
         guessesTaken += 1
         if guess == secretNum:
             break
         if guessesTaken > MAX_GUESS:
             print('你猜不出来了,答案是%s.' % secretNum)
-    print('你想再玩一次吗?（是或否）?')
-    if not input().lower().startswith('是'):
+    print('你想再玩一次吗?（yes/no）')
+    if not raw_input().lower().startswith('y'):
         break
