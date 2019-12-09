@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2019/12/6 15:23
 # @Author  : DeathIsReborn
-# @File    : Begals.py
+# @File    : Bagels.py
 # @Software: PyCharm
 import random
 
